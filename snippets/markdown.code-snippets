@@ -1,0 +1,81 @@
+{
+  // Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Markdown bold sentence": {
+    "prefix": "bo",
+    "body": [
+      "**${1}**"
+    ],
+    "description": "Markdown bold sentence"
+  },
+  "Markdown italics sentence": {
+    "prefix": "it",
+    "body": [
+      "*${1}*"
+    ],
+    "description": "Markdown italics sentence"
+  },
+  "Markdown code line": {
+    "prefix": "cl",
+    "body": [
+      "`${1}`"
+    ],
+    "description": "Markdown code line"
+  },
+  "Markdown code block": {
+    "prefix": "cb",
+    "body": [
+      "```${1}",
+      "${2}",
+      "```"
+    ],
+    "description": "Markdown code block"
+  },
+  "Markdown code block (JavaScript)": {
+    "prefix": "cbjs",
+    "body": [
+      "```javascript",
+      "${1}",
+      "```"
+    ],
+    "description": "Markdown code block (JavaScript)"
+  },
+  "Markdown code block (TypeScript)": {
+    "prefix": "cbts",
+    "body": [
+      "```typescript",
+      "${1}",
+      "```"
+    ],
+    "description": "Markdown code block (TypeScript)"
+  },
+  "Markdown code block (Python)": {
+    "prefix": "cbpy",
+    "body": [
+      "```python",
+      "${1}",
+      "```"
+    ],
+    "description": "Markdown code block (Python)"
+  },
+  "Markdown code block (bash)": {
+    "prefix": "cbba",
+    "body": [
+      "```bash",
+      "${1}",
+      "```"
+    ],
+    "description": "Markdown code block (bash)"
+  }
+}
