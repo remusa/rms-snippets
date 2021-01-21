@@ -27,7 +27,7 @@
   "scripts": {
     "package": "vsce package",
     "publish": "vsce publish",
-    "format:prettier": "prettier --ignore-path .gitignore --write *.md snippets/*",
+    "format:prettier": "npx prettier --ignore-path .gitignore --write *.md snippets/*",
     "format": "npm run format:prettier"
   },
   "contributes": {
