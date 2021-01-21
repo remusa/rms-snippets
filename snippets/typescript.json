@@ -1,11 +1,7 @@
 {
   "Typescript Interface": {
     "prefix": "int",
-    "body": [
-      "interface $1 {",
-      "\t$2",
-      "}"
-    ],
+    "body": ["interface $1 {", "\t$2", "}"],
     "description": "Typescript Interface"
   }
 }

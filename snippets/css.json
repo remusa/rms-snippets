@@ -1,10 +1,7 @@
 {
   "Center things": {
     "prefix": "css-center",
-    "body": [
-      "align-items: center;",
-      "justify-content: center;"
-    ],
+    "body": ["align-items: center;", "justify-content: center;"],
     "description": "Center items in a flex container"
   },
   "display:flex and center things": {
@@ -18,9 +15,7 @@
   },
   "Tailwind - apply": {
     "prefix": "tw-apply",
-    "body": [
-      "@apply $1;",
-    ],
+    "body": ["@apply $1;"],
     "description": "Tailwind apply"
   }
 }

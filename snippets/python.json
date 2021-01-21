@@ -1,9 +1,7 @@
 {
   "Print to console": {
     "prefix": "cl",
-    "body": [
-      "print(f'$1: {$1}')$2",
-    ],
+    "body": ["print(f'$1: {$1}')$2"],
     "description": "Log output to console"
   },
   "Parse CSV": {
@@ -17,7 +15,7 @@
       "\treturn dr\n",
       "file_data = parse_csv('somefile.csv')\n",
       "for data in file_data:",
-      "\tprint(data['ColumnName'])\n",
+      "\tprint(data['ColumnName'])\n"
     ],
     "description": "Read and parse a CSV file"
   },
@@ -26,7 +24,7 @@
     "body": [
       "file = \"$1\" + \".$2\"\n",
       "with open(file, \"w\") as in_file:",
-      "\tout_file.write($3)\n",
+      "\tout_file.write($3)\n"
     ],
     "description": "Read and parse a CSV file"
   },
@@ -35,7 +33,7 @@
     "body": [
       "file = \"$1\" + \".$2\"\n",
       "with open(file, \"w\") as out_file:",
-      "\tout_file.write($3)\n",
+      "\tout_file.write($3)\n"
     ],
     "description": "Read and parse a CSV file"
   },
@@ -46,7 +44,7 @@
       "\ttry:",
       "\t\tos.remove(article_file)",
       "\texcept Exception as e:",
-      "\t\tprint(f\"Error: {e}\")\n",
+      "\t\tprint(f\"Error: {e}\")\n"
     ],
     "description": "Read and parse a CSV file"
   },
