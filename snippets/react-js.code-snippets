@@ -1,0 +1,17 @@
+{
+  // Components
+  "React Functional Component": {
+    "scope": "javascriptreact",
+    "prefix": "rsfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const $1 = () => {",
+      "\treturn ($2)",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "JavaScript React Functional Component"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  // React
+  "Import React": {
+    "prefix": "imr",
+    "body": [
+      "import React from 'react'"
+    ],
+    "description": "Import React"
+  },
+  "Import React, { Component }": {
+    "prefix": "imrc",
+    "body": [
+      "import React, { Component } from 'react'"
+    ],
+    "description": "Import React, { Component }"
+  },
+  "Import React, { useState }": {
+    "prefix": "imrs",
+    "body": [
+      "import React, { useState } from 'react'"
+    ],
+    "description": "Import React, { useState }"
+  },
+  "Import React, { useState, useEffect }": {
+    "prefix": "imrse",
+    "body": [
+      "import React, { useState, useEffect } from 'react'"
+    ],
+    "description": "Import React, { useState, useEffect }"
+  },
+  "Import PropTypes": {
+    "prefix": "improp",
+    "body": [
+      "import PropTypes from 'prop-types'"
+    ],
+    "description": "Imports PropTypes"
+  },
+  // Hooks
+  "useEffect interval": {
+    "prefix": "useinterval",
+    "body": [
+      "const [isOn, setIsOn] = useState(false);",
+      "const [timer, setTimer] = useState(0);",
+      "",
+      "useEffect(() => {",
+      "    let interval",
+      " ",
+      "    if (isOn) {",
+      "      interval = setInterval(",
+      "        () => setTimer(timer => timer + 1),",
+      "        1000,",
+      "      )",
+      "    }",
+      " ",
+      "    return () => clearInterval(interval);",
+      "  }, [isOn])"
+    ],
+    "description": "useEffect interval"
+  },
+  "Declare a new state variable using State Hook": {
+    "prefix": "usestate",
+    "body": [
+      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
+    ],
+    "description": "Declare a new state Variable using the State Hook. Hit Tab to apply CamelCase to function"
+  },
+  "setState": {
+    "prefix": "setstate",
+    "body": [
+      "setState($1)"
+    ],
+    "description": "useState hook"
+  },
+  "useEffect": {
+    "prefix": "useeffect",
+    "body": [
+      "useEffect(() => {",
+      "\t$1",
+      "}, [])"
+    ],
+    "description": "useEffect Hook"
+  },
+  // Handlers
+  "Toggle State (class)": {
+    "prefix": "handletoggleclass",
+    "body": [
+      "this.setState(state => ({",
+      "\topen: !state.open",
+      "}));"
+    ],
+    "description": "toggle state"
+  },
+  "Handle change function (class)": {
+    "prefix": "handlechangeclass",
+    "body": [
+      "const handleChange = e => {",
+      "\tconst { name, value } = e.target",
+      "\tthis.setState({",
+      "\t\t[name]: value,",
+      "\t})",
+      "}"
+    ],
+    "description": "Handle change function"
+  },
+  "Handle change function (hooks)": {
+    "prefix": "handlechange",
+    "body": [
+      "const handleChange = e => {",
+      "\tconst { name, value } = e.target",
+      "\tif (name === '$1') set$1(value)",
+      "\telse if (name === '$2') set$2(value)",
+      "}"
+    ],
+    "description": "Handle change function (hooks)"
+  },
+  "Handle submit function (class)": {
+    "prefix": "handlesubmitclass",
+    "body": [
+      "handleSubmit = async (e, action) => {",
+      "\te.preventDefault()",
+      "\tawait action()",
+      "\tthis.setState = initialState",
+      "}"
+    ],
+    "description": "Form submit function"
+  },
+  "Handle submit function (hooks)": {
+    "prefix": "handlesubmit",
+    "body": [
+      "const handleSubmit = async (e, action) => {",
+      "\te.preventDefault()",
+      "\tawait action()",
+      "}"
+    ],
+    "description": "Form submit function (hook)"
+  },
+  // React Native
+  "React Native StyleSheet": {
+    "prefix": "rnstylesheet",
+    "body": [
+      "import {StyleSheet} from 'react-native'",
+      "const styles = StyleSheet.create({",
+      "",
+      "});"
+    ],
+    "description": "React Native StyleSheet"
+  },
+  "React Native Style": {
+    "prefix": "rnstyle",
+    "body": [
+      "style={styles.$1}"
+    ],
+    "description": "React Native Style"
+  },
+  // Tailwind Styled Components
+  "Tailwind Styled": {
+    "prefix": "tail",
+    "body": [
+      "const ${1:Component} = styled.${2:div}`",
+      " ${tw`${3}`};",
+      "`"
+    ]
+  },
+  "Tailwind Styled css": {
+    "prefix": "tailc",
+    "body": [
+      "const ${1:className} = css`",
+      " ${tw`${2}`};",
+      "`"
+    ]
+  },
+  // Styled Components
+  "Import styled-components": {
+    "prefix": "imsty",
+    "body": [
+      "import styled from 'styled-components'"
+    ],
+    "description": "Imports styled-components"
+  },
+  "Import emotion": {
+    "prefix": "imemo",
+    "body": [
+      "import styled from '@emotion/styled'"
+    ],
+    "description": "Imports emotion styled function"
+  },
+  "Styled Component": {
+    "prefix": "rsty",
+    "body": [
+      "const ${1} = styled.${2}`",
+      "  ${3}",
+      "`"
+    ],
+    "description": "Creates styled component"
+  },
+  "Styled Components property": {
+    "prefix": "rstyp",
+    "body": [
+      "${props => props.theme.${1:property}};"
+    ],
+    "description": "Styled Components props"
+  }
+}

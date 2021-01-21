@@ -1,24 +1,6 @@
 {
-  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
-  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
-  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
-  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
-  // Placeholders with the same ids are connected.
-  // Example:
-  // "Print to console": {
-  // 	"scope": "javascript,typescript",
-  // 	"prefix": "log",
-  // 	"body": [
-  // 		"console.log('$1');",
-  // 		"$2"
-  // 	],
-  // 	"description": "Log output to console"
-  // },
-  // JAVASCRIPT
   // Console
   "Print to console": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "cl",
     "body": [
       "console.log(`$1`)"
@@ -26,7 +8,6 @@
     "description": "Log output to console"
   },
   "Print variable to console": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "cll",
     "body": [
       "console.log(`${$1}`)"
@@ -34,7 +15,6 @@
     "description": "Log output to console"
   },
   "Print table to console": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "clta",
     "body": [
       "console.table(`${[$1]}`)"
@@ -42,7 +22,6 @@
     "description": "Log output to console as table"
   },
   "Print timer to console": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "clti",
     "body": [
       "console.time('timer')",
@@ -54,7 +33,6 @@
     "description": "Log timer to console"
   },
   "Print JSON Stringify": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "cls",
     "body": [
       "console.log(`${JSON.stringify($1)}`)"
@@ -62,7 +40,6 @@
     "description": "Print JSON Stringify"
   },
   "Print Object Entries": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "clobe",
     "body": [
       "console.log(`${Object.entries($1)}`)"
@@ -71,7 +48,6 @@
   },
   // Strings and JSON
   "JSON Stringify": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "jns",
     "body": [
       "JSON.stringify($1)"
@@ -79,7 +55,6 @@
     "description": "JSON Stringify"
   },
   "String Template": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "ste",
     "body": [
       "`${$1}`"
@@ -88,7 +63,6 @@
   },
   // Arrays
   "Array Methods": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "arm",
     "body": [
       "${1|forEach,map,filter,reduce,some|}((${2:item}) => {",
@@ -98,20 +72,17 @@
     "description": "Array Method"
   },
   "destructingArray": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "ard",
     "body": "const [${2:propertyName}] = ${1:arrayToDestruct}",
     "description": "Creates and assigns a local variable using array destructing"
   },
   // Objects
   "destructingObject": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "obd",
     "body": "const {${2:propertyName}} = ${1:objectToDestruct}",
     "description": "Creates and assigns a local variable using object destructing"
   },
   "Object Entries": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "obe",
     "body": [
       "Object.entries($1)"
@@ -119,7 +90,6 @@
     "description": "Get object and its keys-values"
   },
   "Object Keys": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "obk",
     "body": [
       "Object.keys($1)"
@@ -127,7 +97,6 @@
     "description": "Get object keys"
   },
   "Object Values": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "obv",
     "body": [
       "Object.values($1)"
@@ -136,7 +105,6 @@
   },
   // Functions
   "Named Function": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "fn",
     "body": [
       "function ${1:functionName}($2) {",
@@ -146,7 +114,6 @@
     "description": "Named Function"
   },
   "Arrow Function": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "fnar",
     "body": [
       "const ${1:functionName} = ($2) => {",
@@ -156,7 +123,6 @@
     "description": "Arrow Function"
   },
   "Anonymous Function": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "fnan",
     "body": [
       "function() {",
@@ -167,7 +133,6 @@
   },
   // Control statements
   "If Statement": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "if",
     "body": [
       "if (${1:condition}) {",
@@ -177,7 +142,6 @@
     "description": "If Statement"
   },
   "If Else Statement": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "ife",
     "body": [
       "if (${1:condition}) {",
@@ -190,106 +154,89 @@
   },
   // Loops
   "forEach": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "fea",
     "body": "${1:array}.forEach(${2:currentItem} => {\n\t${0}\n})",
     "description": "Creates a forEach statement in ES6 syntax"
   },
   "forOf": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "fof",
     "body": "for (const ${1:item} of ${2:object}) {\n\t${0}\n}",
     "description": "Iterating over property names of iterable objects"
   },
   "forIn": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "fin",
     "body": "for (const ${1:item} in ${2:object}) {\n\t${0}\n}",
     "description": "Iterating over property values of iterable objects"
   },
   // Intervals
   "setInterval": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "sti",
     "body": "setInterval(() => {\n\t${2}\n}, ${0:intervalInms})",
     "description": "Executes the given function at specified intervals in ES6 syntax"
   },
   "setTimeOut": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "sto",
     "body": "setTimeout(() => {\n\t${2}\n}, ${1:delayInms})",
     "description": "Executes the given function after the specified delay in ES6 syntax"
   },
   // Imports
   "import": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "imp",
     "body": "import ${2:moduleName} from '${1:module}'$0",
     "description": "Imports entire module statement in ES6 syntax"
   },
   "importNoModuleName": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "imn",
     "body": "import '${1:module}'$0",
     "description": "Imports entire module in ES6 syntax without module name"
   },
   "importDestructing": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "imd",
     "body": "import { $2 } from '${1:module}'$0",
     "description": "Imports only a portion of the module in ES6 syntax"
   },
   "importEverything": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "ime",
     "body": "import * as ${2:alias} from '${1:module}'$0",
     "description": "Imports everything as alias from the module in ES6 syntax"
   },
   "importAs": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "ima",
     "body": "import { ${2:originalName} as ${3:alias} } from '${1:module}'$0",
     "description": "Imports a specific portion of the module by assigning a local alias in ES6 syntax"
   },
   "require": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "req",
     "body": "require('${1:package}')",
     "description": "Require a package"
   },
   "moduleExports": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "emo",
     "body": "module.exports = {\n\t$0\n}\n",
     "description": "Module exports from Common JS, node syntax at ES6"
   },
   "exportNamedFunction": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "enfn",
     "body": "export const ${1:functionName} = (${2:params}) => {\n\t$0\n}\n",
     "description": "Export named function in ES6 syntax"
   },
   "exportDefaultFunction": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "edfn",
     "body": "export default (${1:params}) => {\n\t$0\n}\n",
     "description": "Export default function in ES6 syntax"
   },
   "exportClass": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "edc",
     "body": "export default class ${1:className} {\n\t$0\n}\n",
     "description": "Export default class in ES6 syntax"
   },
   "exportClassExtends": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "edce",
     "body": "export default class ${1:className} extends ${2:baseclassName} {\n\t$0\n}\n",
     "description": "Export default class which extends a base one in ES6 syntax"
   },
   // Promises
   "Fetch Request": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "fr",
     "body": [
       "const response = fetch('${1:URL}')",
@@ -299,7 +246,6 @@
     "description": "Fetch Request"
   },
   "Async Fetch Request": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "afr",
     "body": [
       "const response: void | Response = await fetch(${1:URL}, ${2:INFO})",
@@ -315,19 +261,16 @@
     "description": "Fetch Async/Await"
   },
   "promise": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "prom",
     "body": "return new Promise((resolve, reject) => {\n\t${1}\n})",
     "description": "Creates and returns a new Promise in the standard ES6 syntax"
   },
   "thenCatch": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "thenc",
     "body": ".then((${1:result}) => {\n\t${2}\n}).catch((${3:err}) => {\n\t${4}\n})",
     "description": "Add the .then and .catch methods to handle promises"
   },
   "Axios Request": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "fax",
     "body": [
       "axios.${1|get,post,put,delete|}('${2:url}')",
@@ -336,9 +279,8 @@
     ],
     "description": "Axios Request"
   },
-  // JEST
+  // Jest
   "Node Jest index.js": {
-    "scope": "javascript,typescript",
     "prefix": "ndts",
     "body": [
       "const ${1:functionName} = require('./index')",
@@ -349,9 +291,8 @@
     ],
     "description": "Require and test index.js module"
   },
-  // NODE
+  // Node
   "Node index.js": {
-    "scope": "javascript,typescript",
     "prefix": "ndfn",
     "body": [
       "function ${1:functionName} (${2:params}) {",
@@ -364,14 +305,12 @@
     "description": "Index.js module"
   },
   "Node Require": {
-    "scope": "javascript,typescript",
     "prefix": "nrq",
     "body": "const ${1:import} = require('${module}')",
     "description": "Require a Node.js module"
   },
   // Express.js
   "Express Server": {
-    "scope": "javascript,typescript",
     "prefix": "expsrv",
     "body": [
       "const express = require('express')",
@@ -389,285 +328,17 @@
     "description": "Express Server"
   },
   "Express Route": {
-    "scope": "javascript,typescript",
     "prefix": "exprt",
     "body": "app.${1|get,post,put,delete|}('${3:/}', (req, res) => {});",
     "description": "Express Route"
   },
   "Express Init Middleware": {
-    "scope": "javascript,typescript",
     "prefix": "exmw",
     "body": "app.use(${1:middleware})",
     "description": "Express Middleware"
   },
-  // TYPESCRIPT
-  "Typescript Interface": {
-    "scope": "typescript,typescriptreact",
-    "prefix": "int",
-    "body": [
-      "interface $1 {",
-      "\t$2",
-      "}"
-    ],
-    "description": "Typescript Interface"
-  },
-  // REACT
-  "Import React": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "imr",
-    "body": [
-      "import React from 'react'"
-    ],
-    "description": "Import React"
-  },
-  "Import React, { Component }": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "imrc",
-    "body": [
-      "import React, { Component } from 'react'"
-    ],
-    "description": "Import React, { Component }"
-  },
-  "Import React, { useState }": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "imrs",
-    "body": [
-      "import React, { useState } from 'react'"
-    ],
-    "description": "Import React, { useState }"
-  },
-  "Import React, { useState, useEffect }": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "imrse",
-    "body": [
-      "import React, { useState, useEffect } from 'react'"
-    ],
-    "description": "Import React, { useState, useEffect }"
-  },
-  "Import PropTypes": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "rimp",
-    "body": [
-      "import PropTypes from 'prop-types'"
-    ],
-    "description": "Imports PropTypes"
-  },
-  // Hooks
-  "useEffect interval": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "useInterval",
-    "body": [
-      "const [isOn, setIsOn] = React.useState(false);",
-      "const [timer, setTimer] = React.useState(0);",
-      "",
-      "React.useEffect(() => {",
-      "    let interval",
-      " ",
-      "    if (isOn) {",
-      "      interval = setInterval(",
-      "        () => setTimer(timer => timer + 1),",
-      "        1000,",
-      "      )",
-      "    }",
-      " ",
-      "    return () => clearInterval(interval);",
-      "  }, [isOn])"
-    ],
-    "description": "useEffect interval"
-  },
-  "Declare a new state variable using State Hook": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "usst",
-    "body": [
-      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
-    ],
-    "description": "Declare a new state Variable using the State Hook. Hit Tab to apply CamelCase to function"
-  },
-  "setState": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "uss",
-    "body": [
-      "setState($1)"
-    ],
-    "description": "useState hook"
-  },
-  "useEffect": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "usef",
-    "body": [
-      "useEffect(() => {",
-      "\t$1",
-      "}, [])"
-    ],
-    "description": "useEffect Hook"
-  },
-  // Components
-  "React Functional Component": {
-    "scope": "javascriptreact",
-    "prefix": "rsfc",
-    "body": [
-      "import React from 'react'",
-      "",
-      "const $1 = () => {",
-      "\treturn ($2)",
-      "}",
-      "",
-      "export default $1"
-    ],
-    "description": "JavaScript React Functional Component"
-  },
-  "Typescript React Functional Component": {
-    "scope": "typescriptreact",
-    "prefix": "rsfc",
-    "body": [
-      "import React from 'react'",
-      "",
-      "interface Props {",
-      "",
-      "}",
-      "",
-      "const $1: React.FC<Props> = ($2) => {",
-      "\treturn ($3)",
-      "}",
-      "",
-      "export default $1"
-    ],
-    "description": "Typescript React Functional Component"
-  },
-  "Handle change function (class)": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "rchc",
-    "body": [
-      "const handleChange = e => {",
-      "\tconst { name, value } = e.target",
-      "\tthis.setState({",
-      "\t\t[name]: value,",
-      "\t})",
-      "}"
-    ],
-    "description": "Handle change function"
-  },
-  "Handle change function (hooks)": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "rch",
-    "body": [
-      "const handleChange = e => {",
-      "\tconst { name, value } = e.target",
-      "\tif (name === '$1') set$1(value)",
-      "\telse if (name === '$2') set$2(value)",
-      "}"
-    ],
-    "description": "Handle change function (hooks)"
-  },
-  "Handle submit function (class)": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "rhsuc",
-    "body": [
-      "handleSubmit = async (e, action) => {",
-      "\te.preventDefault()",
-      "\tawait action()",
-      "\tthis.setState = initialState",
-      "}"
-    ],
-    "description": "Form submit function"
-  },
-  "Handle submit function (hooks)": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "rhsu",
-    "body": [
-      "const handleSubmit = async (e, action) => {",
-      "\te.preventDefault()",
-      "\tawait action()",
-      "}"
-    ],
-    "description": "Form submit function (hook)"
-  },
-  "Import styled-components": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "imsc",
-    "body": [
-      "import styled from 'styled-components'"
-    ],
-    "description": "Imports styled-components"
-  },
-  "Import emotion": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "imem",
-    "body": [
-      "import styled from '@emotion/styled'"
-    ],
-    "description": "Imports emotion styled function"
-  },
-  "Styled Component": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "rsty",
-    "body": [
-      "const ${1} = styled.${2}`",
-      "  ${3}",
-      "`"
-    ],
-    "description": "Creates styled component"
-  },
-  "Styled Components property": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "rstyp",
-    "body": [
-      "${props => props.theme.${1:property}};"
-    ],
-    "description": "Styled Components props"
-  },
-  // REACT NATIVE
-  "React Native StyleSheet": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "rnss",
-    "body": [
-      "import {StyleSheet} from 'react-native'",
-      "const styles = StyleSheet.create({",
-      "",
-      "});"
-    ],
-    "description": "React Native StyleSheet"
-  },
-  "React Native Style": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "rnst",
-    "body": [
-      "style={styles.$1}"
-    ],
-    "description": "React Native Style"
-  },
-  "Toggle State": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "tog",
-    "body": [
-      "this.setState(state => ({",
-      "\topen: !state.open",
-      "}));"
-    ],
-    "description": "toggle state"
-  },
-  // APOLLO
-  "Apollo Query Component": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "apq",
-    "body": [
-      "interface Props {",
-      "  children: (data: QueryResult<$1, OperationVariables>) => JSX.Element;",
-      "}",
-      "",
-      "export class $2 extends React.PureComponent<Props> {",
-      "  render() {",
-      "    return (",
-      "     <Query<$1> query={$3}>{x => this.props.children(x)}</Query>",
-      "    );",
-      "  }",
-      "}"
-    ],
-    "description": "Apollo Query Component"
-  },
-  // ESLINT
+  // Eslint
   "eslint-disable": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "eslint-disable",
     "body": [
       "/* eslint-disable ${1|camelcase,default-case,func-names,global-require,import/prefer-default-export,indent,max-len,new-cap,no-alert,no-cond-assign,no-confusing,no-console,no-extend-native,no-mixed-operators,no-new,no-param-reassign,no-shadow,no-undef,no-unused-vars,prefer-arrow-callback,prefer-rest-params,react/prop-types,wrap-iife|} */",
@@ -676,7 +347,6 @@
     "description": "ESLint disable wrapper"
   },
   "eslint-disable-line": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "eslint-disable-line",
     "body": [
       "// eslint-disable-line ${0:rule}"
@@ -684,30 +354,10 @@
     "description": "ESLint disable line"
   },
   "eslint-disable-next-line": {
-    "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "eslint-disable-next-line",
     "body": [
       "// eslint-disable-next-line ${0:rule}"
     ],
     "description": "ESLint disable next line"
-  },
-  // Tailwind Styled Components
-  "Tailwind Styled": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "tail",
-    "body": [
-      "const ${1:Component} = styled.${2:div}`",
-      " ${tw`${3}`};",
-      "`"
-    ]
-  },
-  "Tailwind Styled css": {
-    "scope": "javascriptreact,typescriptreact",
-    "prefix": "tailc",
-    "body": [
-      "const ${1:className} = css`",
-      " ${tw`${2}`};",
-      "`"
-    ]
   }
 }

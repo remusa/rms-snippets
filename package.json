@@ -2,11 +2,25 @@
   "name": "rms-snippets",
   "displayName": "rms-snippets",
   "description": "Various snippets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remusa/rms-snippets"
+  },
   "publisher": "rms",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.52.0"
   },
+  "keywords": [
+    "React",
+    "React JS",
+    "React Snippets",
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "Elixir",
+    "Markdown"
+  ],
   "categories": [
     "Snippets"
   ],
@@ -21,24 +35,57 @@
         "path": "./snippets/elixir.code-snippets"
       },
       {
-        "language": "javascript,javascriptreact",
-        "path": "./snippets/javascript.code-snippets"
-      },
-      {
-        "language": "typescript,typescriptreact",
-        "path": "./snippets/typescript.code-snippets"
-      },
-      {
         "language": "markdown",
         "path": "./snippets/markdown.code-snippets"
       },
       {
         "language": "python",
         "path": "./snippets/python.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/javascript.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/javascript.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/javascript.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescript.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react-js.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react-ts.code-snippets"
       }
     ]
   },
   "scripts": {
-    "package": "vsce package"
+    "package": "vsce package",
+    "format": "npx prettier ."
   }
 }

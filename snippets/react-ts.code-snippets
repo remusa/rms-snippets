@@ -1,0 +1,21 @@
+{
+  // Components
+  "Typescript React Functional Component": {
+    "scope": "typescriptreact",
+    "prefix": "rsfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "interface Props {",
+      "",
+      "}",
+      "",
+      "const $1: FC<Props> = ($2) => {",
+      "\treturn ($3)",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "Typescript React Functional Component"
+  }
+}
