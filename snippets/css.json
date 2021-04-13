@@ -1,20 +1,21 @@
 {
   "Center things": {
-    "prefix": "css-center",
+    "prefix": "flex-center",
     "body": ["align-items: center;", "justify-content: center;"],
     "description": "Center items in a flex container"
   },
-  "display:flex and center things": {
-    "prefix": "css-flexcenter",
-    "body": [
-      "display: flex;",
-      "align-items: center;",
-      "justify-content: center;"
-    ],
+  "Flex center": {
+    "prefix": "flex-center",
+    "body": ["display: flex;", "align-items: center;", "justify-content: center;"],
+    "description": "Center items in a flex container"
+  },
+  "Grid center": {
+    "prefix": "grid-center",
+    "body": ["display: grid;", "place-items: center;"],
     "description": "Center items in a flex container"
   },
   "Tailwind - apply": {
-    "prefix": "tw-apply",
+    "prefix": "app",
     "body": ["@apply $1;"],
     "description": "Tailwind apply"
   }
