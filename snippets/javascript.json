@@ -2,17 +2,23 @@
   // Console
   "Print to console": {
     "prefix": "cl",
-    "body": ["console.log(`$1`)"],
+    "body": [
+      "console.log(`$1`)"
+    ],
     "description": "Log output to console"
   },
   "Print variable to console": {
     "prefix": "cll",
-    "body": ["console.log(`${$1}`)"],
+    "body": [
+      "console.log(`${$1}`)"
+    ],
     "description": "Log output to console"
   },
   "Print table to console": {
     "prefix": "clta",
-    "body": ["console.table(`${[$1]}`)"],
+    "body": [
+      "console.table(`${[$1]}`)"
+    ],
     "description": "Log output to console as table"
   },
   "Print timer to console": {
@@ -28,23 +34,31 @@
   },
   "Print JSON Stringify": {
     "prefix": "cls",
-    "body": ["console.log(`${JSON.stringify($1)}`)"],
+    "body": [
+      "console.log(`${JSON.stringify($1)}`)"
+    ],
     "description": "Print JSON Stringify"
   },
   "Print Object Entries": {
     "prefix": "clobe",
-    "body": ["console.log(`${Object.entries($1)}`)"],
+    "body": [
+      "console.log(`${Object.entries($1)}`)"
+    ],
     "description": "Console log an object and its keys-values"
   },
   // Strings and JSON
   "JSON Stringify": {
     "prefix": "jns",
-    "body": ["JSON.stringify($1)"],
+    "body": [
+      "JSON.stringify($1)"
+    ],
     "description": "JSON Stringify"
   },
   "String Template": {
     "prefix": "ste",
-    "body": ["`${$1}`"],
+    "body": [
+      "`${$1}`"
+    ],
     "description": "String Template"
   },
   // Arrays
@@ -70,44 +84,72 @@
   },
   "Object Entries": {
     "prefix": "obe",
-    "body": ["Object.entries($1)"],
+    "body": [
+      "Object.entries($1)"
+    ],
     "description": "Get object and its keys-values"
   },
   "Object Keys": {
     "prefix": "obk",
-    "body": ["Object.keys($1)"],
+    "body": [
+      "Object.keys($1)"
+    ],
     "description": "Get object keys"
   },
   "Object Values": {
     "prefix": "obv",
-    "body": ["Object.values($1)"],
+    "body": [
+      "Object.values($1)"
+    ],
     "description": "Get object values"
   },
   // Functions
   "Named Function": {
     "prefix": "fn",
-    "body": ["function ${1:functionName}($2) {", "  $3", "}"],
+    "body": [
+      "function ${1:functionName}($2) {",
+      "  $3",
+      "}"
+    ],
     "description": "Named Function"
   },
   "Arrow Function": {
     "prefix": "fnar",
-    "body": ["const ${1:functionName} = ($2) => {", "    $3", "}"],
+    "body": [
+      "const ${1:functionName} = ($2) => {",
+      "    $3",
+      "}"
+    ],
     "description": "Arrow Function"
   },
   "Anonymous Function": {
     "prefix": "fnan",
-    "body": ["function() {", "  $2", "}"],
+    "body": [
+      "function() {",
+      "  $2",
+      "}"
+    ],
     "description": "Anonymous Function"
   },
   // Control statements
   "If Statement": {
     "prefix": "if",
-    "body": ["if (${1:condition}) {", "  $2", "}"],
+    "body": [
+      "if (${1:condition}) {",
+      "  $2",
+      "}"
+    ],
     "description": "If Statement"
   },
   "If Else Statement": {
     "prefix": "ife",
-    "body": ["if (${1:condition}) {", "  $2", "} else {", "    $3", "}"],
+    "body": [
+      "if (${1:condition}) {",
+      "  $2",
+      "} else {",
+      "    $3",
+      "}"
+    ],
     "description": "If else statement"
   },
   // Loops
@@ -294,12 +336,16 @@
   },
   "eslint-disable-line": {
     "prefix": "eslint-disable-line",
-    "body": ["// eslint-disable-line ${0:rule}"],
+    "body": [
+      "// eslint-disable-line ${0:rule}"
+    ],
     "description": "ESLint disable line"
   },
   "eslint-disable-next-line": {
     "prefix": "eslint-disable-next-line",
-    "body": ["// eslint-disable-next-line ${0:rule}"],
+    "body": [
+      "// eslint-disable-next-line ${0:rule}"
+    ],
     "description": "ESLint disable next line"
-  }
+  },
 }

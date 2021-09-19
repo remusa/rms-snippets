@@ -1,22 +1,25 @@
 {
   "Center things": {
     "prefix": "flex-center",
-    "body": ["align-items: center;", "justify-content: center;"],
-    "description": "Center items in a flex container"
-  },
-  "Flex center": {
-    "prefix": "flex-center",
-    "body": ["display: flex;", "align-items: center;", "justify-content: center;"],
+    "body": [
+      "align-items: center;",
+      "justify-content: center;"
+    ],
     "description": "Center items in a flex container"
   },
   "Grid center": {
     "prefix": "grid-center",
-    "body": ["display: grid;", "place-items: center;"],
+    "body": [
+      "display: grid;",
+      "place-items: center;"
+    ],
     "description": "Center items in a flex container"
   },
   "Tailwind - apply": {
     "prefix": "app",
-    "body": ["@apply $1;"],
+    "body": [
+      "@apply $1;"
+    ],
     "description": "Tailwind apply"
   }
 }
